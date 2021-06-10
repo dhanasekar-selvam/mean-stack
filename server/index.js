@@ -14,7 +14,11 @@ require("../server/config/passport")(passport);
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:4200"],
+    origin: [
+      "http://localhost:3000",
+      "http://localhost:4200",
+      "http://192.168.31.189:4200",
+    ],
 
     credentials: true,
   })
