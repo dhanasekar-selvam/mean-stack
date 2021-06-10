@@ -1102,7 +1102,7 @@
             );
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
               1,
-              " Password length should greater than seven"
+              " Password length should greater or equals to six"
             );
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           }
@@ -1178,7 +1178,7 @@
             );
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
               1,
-              " Password length should greater than seven"
+              " Password length should greater or equals to six"
             );
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           }
@@ -2941,7 +2941,7 @@
             );
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
               1,
-              " Password length should greater than seven"
+              " Password length should greater or equals to six"
             );
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           }
@@ -3843,7 +3843,7 @@
             );
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
               1,
-              " Password length should greater than seven"
+              " Password length should greater or equals to six"
             );
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           }
@@ -3924,7 +3924,7 @@
             );
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](
               1,
-              " Password length should greater than seven"
+              " Password length should greater or equals to six"
             );
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           }

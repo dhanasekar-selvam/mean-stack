@@ -238,7 +238,7 @@ router.get("/forgotPassword/mail", (req, res) => {
     <center>
     <p>You request to change your password</p>
     <h3>Dear ${session.userData[0].userName} Please click the change password button to change the password</h3>
-    <a href="http://localhost:8080/api/auth/forgotPassword${session.encrypt_tkn["content"]}" target="_blank">CHANGE PASSWORD</a>
+    <a href="https://whispering-thicket-92019.herokuapp.com/api/auth/forgotPassword${session.encrypt_tkn["content"]}" target="_blank">CHANGE PASSWORD</a>
     </center>
     </body>
     </html>
@@ -297,7 +297,7 @@ router.get("/mail", (req, res) => {
     <center>
     <p>You have a email verification request</p>
     <h3>Dear ${session.userData[0].userName} Please click the verify button to verify the email</h3>
-    <a href="http://localhost:8080/api/auth/verifyEmail${session.encrypt_tkn["content"]}" target="_blank">VERIFY EMAIL</a>
+    <a href="https://whispering-thicket-92019.herokuapp.com/api/auth/verifyEmail${session.encrypt_tkn["content"]}" target="_blank">VERIFY EMAIL</a>
     </center>
     </body>
     </html>
