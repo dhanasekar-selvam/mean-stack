@@ -63,7 +63,7 @@ router.get("/verifyEmail:content", (req, res) => {
       if (err) {
         //console.log(err)
         res.redirect(
-          `http://localhost:4200/expired?email=${session.userData[0].email}`
+          `https://whispering-thicket-92019.herokuapp.com/expired?email=${session.userData[0].email}`
         );
         //res.sendStatus(403);å
       } else {
@@ -74,7 +74,9 @@ router.get("/verifyEmail:content", (req, res) => {
             { $set: { verified: true } },
             { returnOriginal: false },
             (err, doc) => {
-              res.redirect("http://localhost:4200/login?msg=success");
+              res.redirect(
+                "https://whispering-thicket-92019.herokuapp.com/login?msg=success"
+              );
               // res.json({
               //     message: 'token verified',
               //     authData,
@@ -84,7 +86,7 @@ router.get("/verifyEmail:content", (req, res) => {
           );
         } catch (e) {
           res.redirect(
-            "https://cryptic-dawn-68937.herokuapp.com/login?msg=error"
+            "https://whispering-thicket-92019.herokuapp.com/login?msg=error"
           );
           //console.log(e);
         }
@@ -118,7 +120,7 @@ router.get("/forgotPassword:content", (req, res) => {
       if (err) {
         //console.log(err)
         res.redirect(
-          `http://localhost:4200/expired?forgotemail=${session.userData[0].email}`
+          `https://whispering-thicket-92019.herokuapp.com/expired?forgotemail=${session.userData[0].email}`
         );
         //res.sendStatus(403);
       } else {
@@ -135,7 +137,7 @@ router.get("/forgotPassword:content", (req, res) => {
 
 router.get("/passwordChange", (req, res) => {
   const user = { email: session.changePwd_email };
-  res.redirect("http://localhost:4200/passwordchange");
+  res.redirect("https://whispering-thicket-92019.herokuapp.com/passwordchange");
   //res.send(["success", user]);
 
   //res.status(200).send();
@@ -236,7 +238,7 @@ router.get("/forgotPassword/mail", (req, res) => {
     <center>
     <p>You request to change your password</p>
     <h3>Dear ${session.userData[0].userName} Please click the change password button to change the password</h3>
-    <a href="http://localhost:3000/api/auth/forgotPassword${session.encrypt_tkn["content"]}" target="_blank">CHANGE PASSWORD</a>
+    <a href="http://localhost:8080/api/auth/forgotPassword${session.encrypt_tkn["content"]}" target="_blank">CHANGE PASSWORD</a>
     </center>
     </body>
     </html>
@@ -295,7 +297,7 @@ router.get("/mail", (req, res) => {
     <center>
     <p>You have a email verification request</p>
     <h3>Dear ${session.userData[0].userName} Please click the verify button to verify the email</h3>
-    <a href="http://localhost:3000/api/auth/verifyEmail${session.encrypt_tkn["content"]}" target="_blank">VERIFY EMAIL</a>
+    <a href="http://localhost:8080/api/auth/verifyEmail${session.encrypt_tkn["content"]}" target="_blank">VERIFY EMAIL</a>
     </center>
     </body>
     </html>
