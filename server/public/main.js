@@ -54,7 +54,7 @@
           constructor(http) {
             this.http = http;
             this.user = [];
-            this.uri = "http://192.168.31.189:3000/api/auth";
+            this.uri = "https://localhost:3000/api/auth";
           }
           addUser(data) {
             return this.http.post(`${this.uri}/signup`, data);
