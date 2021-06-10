@@ -16,8 +16,10 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
+      "http://192.168.31.189:3000",
       "http://localhost:4200",
       "http://192.168.31.189:4200",
+      "https://whispering-thicket-92019.herokuapp.com/",
     ],
 
     credentials: true,
