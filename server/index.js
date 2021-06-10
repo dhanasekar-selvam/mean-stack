@@ -14,12 +14,7 @@ require("../server/config/passport")(passport);
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: [
-      "http://localhost:4200",
-      "http://localhost:3000",
-      "http://192.168.31.189:3000",
-      "https://whispering-thicket-92019.herokuapp.com",
-    ],
+    origin: ["http://localhost:4200", "http://localhost:8080"],
 
     credentials: true,
   })
@@ -55,7 +50,7 @@ if (process.env.NODE_ENV === "production") {
   app.get(/.*/, (req, res) => res.sendFile(__dirname + "/public/index.html"));
 }
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`);
