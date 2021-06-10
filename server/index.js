@@ -18,6 +18,7 @@ app.use(
       "http://localhost:4200",
       "http://localhost:3000",
       "http://192.168.31.189:3000",
+      "https://whispering-thicket-92019.herokuapp.com",
     ],
 
     credentials: true,
